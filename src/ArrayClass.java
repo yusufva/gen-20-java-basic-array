@@ -34,10 +34,10 @@ public class ArrayClass {
 
     public int[] transposeArray(int[] payload){
         this.newArray = new int[payload.length];
+        int j = payload.length-1;
         for(int i=0; i<newArray.length;i++){
-            for(int j=payload.length-1; j>=0; j--){
-                newArray[i] = payload[j];
-            }
+            newArray[i] = payload[j];
+            j--;
         }
 
         return this.newArray;
