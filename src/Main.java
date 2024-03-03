@@ -16,7 +16,8 @@ public class Main {
                 System.out.println("1. Jumlahkan element Array");
                 System.out.println("2. Jumlahkan element Array pada dimensi 2");
                 System.out.println("3. Membalik susunan Array");
-                System.out.println("4. Keluar");
+                System.out.println("4. Read/Write File");
+                System.out.println("5. Keluar");
                 System.out.println();
                 System.out.print("pilih menu (masukkan angka): ");
                 int opt = s.nextInt();
@@ -44,6 +45,9 @@ public class Main {
                         System.out.println();
                         break;
                     case 4:
+                        FileIOMenu.ioMenu(1);
+                        break;
+                    case 5:
                         p = 0;
                         break;
                     default:
@@ -112,4 +116,5 @@ public class Main {
 
         return newArr;
     }
+
 }
